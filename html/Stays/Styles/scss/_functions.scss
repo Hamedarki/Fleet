@@ -1,0 +1,30 @@
+@media (max-width: 480px) {
+    .nav {
+        font-size: 1.1rem;
+        display: flex;
+        margin: 1rem;
+    }
+    .right-navbar {
+        display: none;
+    }
+    .item-header {
+        display: flex;
+        position: relative;
+        top: .2rem;
+    }
+    .left-navbar {
+        display: flex;
+        .logo {
+            margin-left: auto;
+            padding: 0;
+            justify-content: space-evenly;
+            border: none;
+        }
+        .logo img {
+            max-width: 27%;
+        }
+        .travelers {
+            display: none;
+        }
+    }
+}

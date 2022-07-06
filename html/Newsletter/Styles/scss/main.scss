@@ -1,0 +1,127 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 3rem 0;
+    .section-left {
+        @include flex-dr-col;
+        h2 {
+            font-size: 4.2rem;
+            font-weight: 600;
+            margin-right: auto;
+            margin-bottom: .5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: gray;
+            margin-right: auto;
+            margin-bottom: 2rem;
+        }
+        div {
+            margin-top: 1.2rem;
+            margin-right: auto;
+            font-size: 1.3rem;
+            font-weight: 600;
+            &:hover {
+                @include hoverHeader
+            }
+            &:nth-of-type(1) button {
+                background-color: $notifaction-color;
+            }
+            &:nth-of-type(2) button {
+                background-color: $bg-button-color-1;
+            }
+            button {
+                padding: .5rem 1.1rem;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 500;
+                color: snow;
+                border: none;
+                border-radius: 2rem;
+                margin-right: 1rem;
+                i {
+                    background-color: $bg-button-color;
+                    padding: .7rem;
+                    font-size: 1.2rem;
+                    position: relative;
+                    right: 4.5rem;
+                    border-radius: 50%;
+                }
+            }
+            input {
+                padding: .8rem;
+                width: 19vw;
+                border-radius: 2.5rem;
+                border: 1px solid gray;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            }
+        }
+    }
+    .section-right {
+        align-items: flex-start;
+        justify-content: center;
+        .item-1 {
+            margin-top: 2rem;
+            z-index: 1;
+            img {
+                height: 50vh;
+                width: 20vw;
+            }
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            left: 8rem;
+            .image-small {
+                @include supportStyle;
+                position: relative;
+                width: 14vw;
+                right: 2rem;
+                img {
+                    height: 6vh;
+                    width: 3vw;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .item-2 {
+            z-index: -1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            bottom: 4rem;
+            right: 8rem;
+            .image-small {
+                @include supportStyle;
+                position: relative;
+                width: 14vw;
+                right: 37rem;
+                img {
+                    height: 6vh;
+                    width: 3vw;
+                    border-radius: 50%;
+                }
+            }
+        }
+        img {
+            height: 30vh;
+            width: 15vw;
+            border-radius: 2rem;
+            &:hover {
+                @include hoverBottom
+            }
+        }
+        .image-a {
+            z-index: 1;
+            position: absolute;
+            right: 18rem;
+            bottom: 3rem;
+            height: 40vh;
+        }
+    }
+}

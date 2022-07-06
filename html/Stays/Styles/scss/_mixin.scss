@@ -1,0 +1,47 @@
+@mixin image-size {
+    width: 3vw;
+    height: 5vh;
+    object-fit: cover;
+    max-height: fit-content;
+    border-radius: 50%;
+}
+
+;
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+;
+@mixin hoverHeader {
+    &:hover {
+        transform: translateY(.5rem);
+        transition: all ease-in-out .6s;
+        cursor: pointer;
+    }
+}
+
+;
+@mixin styleList {
+    padding: 1rem;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: gray;
+}
+
+;
+@mixin font-size-main {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+@mixin hoverBottom {
+    &:hover {
+        transform: translateY(.25rem);
+        transition: all ease-in-out .6s;
+        cursor: pointer;
+    }
+}

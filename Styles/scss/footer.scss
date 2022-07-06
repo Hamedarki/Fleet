@@ -1,0 +1,93 @@
+.footer {
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 76vw;
+        height: 25vh;
+        background-color: $bg-white-color-obasity;
+        position: absolute;
+        color: gray;
+        bottom: .5rem;
+        left: 16rem;
+        border-radius: 2.5rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; // margin: auto;}
+        .list-footer {
+            display: flex;
+            flex-direction: row;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin: .2rem;
+            border-bottom: 1px solid gray;
+        }
+        .list-footer li {
+            margin-top: 2rem;
+            margin-left: 4.5rem;
+            padding-bottom: 2rem;
+        }
+        .list-footer li:hover {
+            transform: translateY(.3rem);
+            transition: all ease-in-out .5s;
+            color: black;
+        }
+        .list-data {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 1.5rem;
+            button {
+                font-size: 1.7rem;
+                padding: 1rem 1.2rem;
+                border-radius: 50%;
+                background-color: $bg-button-color;
+                color: white;
+                border: none;
+                outline: none;
+            }
+            button:hover {
+                @include hoverHeader
+            }
+        }
+        .list-data-item {
+            display: flex;
+            flex-direction: row;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .list-data-item div h3 {
+            font-size: 2rem;
+            color: black;
+            font-weight: 700;
+        }
+        .list-data-item i {
+            margin-top: .5rem;
+            margin-right: 1rem;
+            font-size: 2rem;
+        }
+        .list-data-item input[type="location"] {
+            background-color: inherit;
+            border: none;
+            padding: .5rem;
+            outline: none;
+            width: 15vw;
+            border-radius: 1rem;
+            &:focus {
+                outline: gray 1px solid;
+            }
+        }
+        .list-data-item input[type="text"] {
+            background-color: inherit;
+            border: none;
+            padding: .5rem;
+            outline: none;
+            width: 14vw;
+            border-radius: 1rem;
+            &:focus {
+                outline: gray 1px solid;
+            }
+        }
+        .list-data-item:hover {
+            @include hoverHeader
+        }
+    }
+}

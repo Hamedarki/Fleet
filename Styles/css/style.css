@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 5rem;
+  flex: 1;
+}
+
+.left-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.left-navbar li {
+  padding: 1rem;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: gray;
+}
+.left-navbar li:hover {
+  transform: translateY(0.5rem);
+  transition: all ease-in-out 0.6s;
+}
+.left-navbar .line {
+  display: inline-block;
+  width: 0.1vw;
+  height: 7vh;
+  background-color: black;
+  margin-left: 1rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 1px solid rgb(209, 209, 209);
+  height: 8vh;
+}
+.logo h2 {
+  padding-right: 2rem;
+  font-weight: 900;
+  color: black;
+}
+
+.travelers-list > li > img {
+  width: 3vw;
+  height: 5vh;
+  object-fit: cover;
+  max-height: fit-content;
+  border-radius: 50%;
+  margin-left: 0;
+}
+
+.travelers-list li {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-left: auto;
+  width: 100%;
+  height: 80%;
+  border-radius: 2.5rem;
+  text-align: center;
+}
+
+.travelers-list li h4 {
+  position: relative;
+  top: 0.6rem;
+  right: 0.4rem;
+}
+
+.travelers-list li:hover {
+  transition: all ease-in-out 0.8s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.travel {
+  display: none;
+  position: absolute;
+  width: 14vw;
+  background-color: #e8efe1;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.travelers:hover > .travel {
+  display: inline-block;
+}
+
+.right-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-navbar li > img {
+  width: 3vw;
+  height: 5vh;
+  object-fit: cover;
+  max-height: fit-content;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+}
+.right-navbar li {
+  padding: 1rem;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: gray;
+}
+.right-navbar li:hover {
+  transform: translateY(0.5rem);
+  transition: all ease-in-out 0.6s;
+}
+.right-navbar .list-property {
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  color: black;
+  border: 1.5px solid gray;
+  border-radius: 2rem;
+}
+.right-navbar .icon-bell button {
+  font-size: 2rem;
+  border: none;
+}
+.right-navbar .icon-bell .green-1 {
+  display: inline-block;
+  width: 0.7vw;
+  height: 1.4vh;
+  border-radius: 50%;
+  background-color: #5fb97f;
+  position: relative;
+  bottom: 1.3vh;
+  right: 0.9vw;
+}
+
+.right-navbar li:nth-child(2) i {
+  padding-right: 0.8rem;
+}
+
+.hambergur {
+  display: none;
+  font-size: 2rem;
+}
+
+.item-header {
+  display: none;
+  margin: 1.2rem 1rem;
+  align-items: center;
+}
+.item-header li > img {
+  width: 10vw;
+  height: 5vh;
+  object-fit: cover;
+  max-height: fit-content;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+.item-header .icon-bell-mobile button {
+  font-size: 2rem;
+  border: none;
+}
+.item-header .hambergur {
+  display: flex;
+}
+
+.show-menu {
+  height: 10rem;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    font-size: 1.1rem;
+    display: flex;
+    margin: 1rem;
+  }
+
+  .right-navbar {
+    display: none;
+  }
+
+  .item-header {
+    display: flex;
+    position: relative;
+    top: 0.2rem;
+  }
+
+  .left-navbar {
+    display: flex;
+  }
+  .left-navbar .logo {
+    margin-left: auto;
+    padding: 0;
+    justify-content: space-evenly;
+    border: none;
+  }
+  .left-navbar .logo img {
+    max-width: 27%;
+  }
+  .left-navbar .travelers {
+    display: none;
+  }
+}
+.main {
+  max-width: 100%;
+  margin: 0 8rem;
+}
+.main section {
+  background: url("../../Images/Main/damian-denis-D8R_txR_0PE-unsplash.jpg");
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  height: 75vh;
+  margin: auto;
+  background-position: bottom;
+  border-radius: 2.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.main section h3 {
+  font-size: 8rem;
+  cursor: pointer;
+  line-height: 1.3;
+}
+.main section p {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.main section button {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 2.5rem;
+  margin-bottom: 5.5rem;
+  padding: 1rem 1.5rem;
+  background-color: #3b71fe;
+}
+.main section button:hover {
+  transform: translateY(0.5rem);
+  transition: all ease-in-out 0.6s;
+}
+
+.footer section {
+  display: flex;
+  flex-direction: column;
+  width: 76vw;
+  height: 25vh;
+  background-color: rgba(253, 253, 253, 0.93);
+  position: absolute;
+  color: gray;
+  bottom: 0.5rem;
+  left: 16rem;
+  border-radius: 2.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.footer section .list-footer {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0.2rem;
+  border-bottom: 1px solid gray;
+}
+.footer section .list-footer li {
+  margin-top: 2rem;
+  margin-left: 4.5rem;
+  padding-bottom: 2rem;
+}
+.footer section .list-footer li:hover {
+  transform: translateY(0.3rem);
+  transition: all ease-in-out 0.5s;
+  color: black;
+}
+.footer section .list-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.footer section .list-data button {
+  font-size: 1.7rem;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: #3b71fe;
+  color: white;
+  border: none;
+  outline: none;
+}
+.footer section .list-data button:hover:hover {
+  transform: translateY(0.5rem);
+  transition: all ease-in-out 0.6s;
+}
+.footer section .list-data-item {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.footer section .list-data-item div h3 {
+  font-size: 2rem;
+  color: black;
+  font-weight: 700;
+}
+.footer section .list-data-item i {
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+.footer section .list-data-item input[type=location] {
+  background-color: inherit;
+  border: none;
+  padding: 0.5rem;
+  outline: none;
+  width: 15vw;
+  border-radius: 1rem;
+}
+.footer section .list-data-item input[type=location]:focus {
+  outline: gray 1px solid;
+}
+.footer section .list-data-item input[type=text] {
+  background-color: inherit;
+  border: none;
+  padding: 0.5rem;
+  outline: none;
+  width: 14vw;
+  border-radius: 1rem;
+}
+.footer section .list-data-item input[type=text]:focus {
+  outline: gray 1px solid;
+}
+.footer section .list-data-item:hover:hover {
+  transform: translateY(0.5rem);
+  transition: all ease-in-out 0.6s;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+i,
+button {
+  font-size: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+li,
+ol,
+ul {
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=style.css.map */

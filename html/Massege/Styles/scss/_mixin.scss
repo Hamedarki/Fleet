@@ -1,0 +1,118 @@
+@mixin image-size {
+    width: 3vw;
+    height: 5vh;
+    object-fit: cover;
+    max-height: fit-content;
+    border-radius: 50%;
+}
+
+;
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+;
+@mixin hoverHeader {
+    &:hover {
+        transform: translateY(.5rem);
+        transition: all ease-in-out .6s;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        cursor: pointer;
+    }
+    &:focus {
+        transform: translateY(.5rem);
+        transition: all ease-in-out .6s;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        cursor: pointer;
+    }
+}
+
+@mixin hover-with-shadow {
+    &:hover {
+        transform: translateY(.5rem);
+        transition: all ease-in-out .6s;
+        cursor: pointer;
+    }
+}
+
+;
+@mixin styleList {
+    padding: 1rem;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: gray;
+}
+
+;
+@mixin font-size-main {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+@mixin hoverBottom {
+    &:hover {
+        transform: translateY(.25rem);
+        transition: all ease-in-out .6s;
+        cursor: pointer;
+    }
+}
+
+@mixin supportStyle {
+    background-color: $bg-white-color;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    width: 12vw;
+    padding: .8rem;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    i {
+        font-size: 1rem;
+        color: yellow;
+        margin-right: .4rem;
+    }
+    img {
+        transform: none;
+    }
+}
+
+@mixin flex-dr-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin person {
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    h4 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    p {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: .4rem;
+    }
+    i {
+        color: yellow;
+        margin-right: .2rem;
+    }
+    .date {
+        color: gray;
+    }
+}

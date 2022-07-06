@@ -1,0 +1,21 @@
+.footer {
+    background-color: $color-speak-white;
+    section {
+        padding: 2rem;
+        margin: 2rem 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: 500;
+        div>p {
+            @include hoverBottom
+        }
+        div>h4 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}

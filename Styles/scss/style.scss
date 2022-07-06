@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "mixin";
+@import "variable";
+@import "header";
+@import "functions";
+@import "main";
+@import "footer";
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    background-color: $bg-white-color;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+i,
+button {
+    font-size: inherit;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+li,
+ol,
+ul {
+    list-style-type: none;
+}
