@@ -25,12 +25,13 @@ body {
   height: 4vh;
 }
 
-.footer section {
-  position: absolute;
-  left: 12.5rem;
-  right: 0;
-  top: 88rem;
+.footer {
+  position: relative;
+  top: 9rem;
+  right: 4.5rem;
   bottom: 0;
+}
+.footer section {
   width: 70vw;
   height: 18vh;
 }
