@@ -1,0 +1,287 @@
+@import "../../Styles/scss/mixin";
+@import "../../Styles/scss/variable";
+.header {
+    .nav {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+        gap: .1rem;
+        .left-navbar {
+            .logo {
+                border: none;
+            }
+            .travelers {
+                .travelers-list {
+                    width: 25vw;
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .right-navbar {
+            .icon-bell {
+                display: none;
+            }
+            img {
+                width: auto;
+                height: 4vh;
+            }
+        }
+    }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 30% 70%);
+    grid-template-rows: repeat(2, 50% 50%);
+    .section-a {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 1rem;
+        h3 {
+            margin-top: 1.5rem;
+            margin-left: 1.8rem;
+        }
+        .person {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 1rem;
+            margin-bottom: 1.4rem;
+            img {
+                width: auto;
+                height: 3.5vh;
+            }
+        }
+    }
+    .section-b {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 100%;
+        margin: 0;
+        justify-content: center;
+        position: relative;
+        bottom: 12rem;
+        .date-b {
+            position: relative;
+            bottom: 1rem;
+        }
+        .john {
+            position: relative;
+            left: 17.8rem;
+            bottom: 1.5rem;
+        }
+        .input-item {
+            position: relative;
+            top: 27rem;
+            input {
+                width: 50vw;
+            }
+        }
+        div {
+            img {
+                width: auto;
+                height: 3.5vh;
+            }
+        }
+        .mike-1 {
+            img {
+                position: relative;
+                bottom: 1.5rem;
+            }
+            position: relative;
+            right: 17rem;
+            top: 10rem;
+        }
+    }
+    .section-c {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        border-top: 1px solid gray;
+        margin: auto;
+        .item-c {
+            width: 100%;
+            margin: 0;
+            img {
+                margin: 0;
+                width: 100%;
+                object-fit: cover;
+            }
+            button {
+                display: none;
+            }
+        }
+        h4 {
+            font-size: 3rem;
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .paragh-c {
+            text-align: center;
+            font-size: 1.9rem;
+            margin-top: 1rem;
+            p {
+                img {
+                    width: auto;
+                    height: 10vh;
+                    margin: 0 1rem;
+                    position: relative;
+                    top: 2rem;
+                }
+            }
+        }
+        .guests {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 10%;
+            padding: 0;
+            .span {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                border-radius: 2rem;
+                padding: 1rem 2rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+                .p {
+                    width: 7vw;
+                    text-align: center;
+                }
+                i {
+                    position: relative;
+                    left: .5rem;
+                    color: black;
+                }
+                &:hover {
+                    animation: backimage 9s infinite;
+                }
+            }
+        }
+        .flags {
+            position: relative;
+            top: 3rem;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            p {
+                border: 1px solid gray;
+                padding: 2.4rem;
+                width: 20vw;
+                height: auto;
+                text-align: center;
+                border-radius: 2rem;
+                &:hover {
+                    border-radius: 2rem;
+                    animation: bathroom 6s infinite;
+                }
+            }
+        }
+        .paragh {
+            position: relative;
+            top: 5rem;
+        }
+        .Detail {
+            position: relative;
+            top: 5rem;
+            text-align: center;
+        }
+    }
+}
+
+@keyframes backimage {
+    0% {
+        background: url("../../../../Images/travel/adobestock-130932614.jpeg");
+        object-fit: cover;
+        background-position: center;
+    }
+    10% {
+        background: url("../../../../Images/travel/downlo11ad.jfif");
+        object-fit: cover;
+        background-position: center;
+    }
+    20% {
+        background: url("../../../../Images/travel/download.jfif");
+        object-fit: cover;
+        background-position: center;
+    }
+    30% {
+        background: url("../../../../Images/travel/choose-the-best-travel-insurance-program-that-meets-your-needs.jpeg");
+        object-fit: cover;
+        background-position: center;
+    }
+    40% {
+        background: url("../../../../Images/travel/getty_583734066_335273.jpg");
+        object-fit: cover;
+        background-position: center;
+    }
+    50% {
+        background: url("../../../../Images/travel/images.jfif");
+        object-fit: cover;
+        background-position: center;
+    }
+    60% {
+        background: url("../../../../Images/travel/images.jfif");
+        object-fit: cover;
+        background-position: center;
+    }
+    70% {
+        background: url("../../../../Images/travel/images\ \(1\).jfif");
+        object-fit: cover;
+        background-position: center;
+    }
+    80% {
+        background: url("../../../../Images/travel/photo-1468818438311-4bab781ab9b8.jfif");
+        object-fit: cover;
+        background-position: center;
+    }
+    90% {
+        background: url("../../../../Images/travel/Travel-Insurance-Family-Walking-Through-the-Airport.webp");
+        object-fit: cover;
+        background-position: center;
+    }
+    100% {
+        background: url("../../../../Images/travel/Picture2.png");
+        object-fit: cover;
+        background-position: center;
+    }
+}
+
+@keyframes bathroom {
+    0% {
+        background: url("../../../../Images/bathroom/download.jfif");
+        object-fit: cover;
+        background-position: center;
+    }
+    20% {
+        background: url("../../../../Images/bathroom/hotel\ bathroom\ mayfair\ king\ suite.webp");
+        object-fit: cover;
+        background-position: center;
+    }
+    40% {
+        background: url("../../../../Images/bathroom/images.jfif");
+        object-fit: cover;
+        background-position: center;
+    }
+    60% {
+        background: url("../../../../Images/bathroom/images\ \(1\).jfif");
+        object-fit: cover;
+        background-position: center;
+    }
+    80% {
+        background: url("../../../../Images/bathroom/w-south-beach-hotel-miami-LUXBATH0817-3ce32b0e78fb4b9e9ee6695f0fdb7de6.jpg");
+        object-fit: cover;
+        background-position: center;
+    }
+    100% {
+        background: url("../../../../Images/bathroom/20-Andara-Resort-and-Villas.jpg");
+        object-fit: cover;
+        background-position: center;
+    }
+}

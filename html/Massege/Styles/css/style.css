@@ -413,6 +413,8 @@
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 18rem;
+  position: relative;
+  bottom: 12rem;
   color: white;
 }
 .main .section-b .date-b {
@@ -518,10 +520,10 @@
 }
 .main .section-b .input-item {
   position: relative;
-  top: 18rem;
+  top: 32rem;
 }
 .main .section-b .input-item input {
-  width: 20vw;
+  width: 30vw;
   padding: 0.8rem 1.1rem;
   border: 1px solid gray;
   border-radius: 2rem;
@@ -542,10 +544,13 @@
   padding: 4rem 2rem;
   border-left: 1px solid gray;
 }
+.main .section-c .item-c img {
+  width: 100%;
+}
 .main .section-c .item-c button {
   position: absolute;
-  right: 11rem;
-  top: 14rem;
+  right: 3rem;
+  top: 13rem;
   padding: 0.8rem 0.6rem;
   font-size: 1rem;
   display: flex;
@@ -573,6 +578,7 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  width: 50%;
 }
 .main .section-c .paragh-c {
   font-size: 1.1rem;
