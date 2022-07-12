@@ -92,7 +92,8 @@
   transition: all ease-in-out 0.6s;
 }
 .footer section .list-footer li:hover {
-  animation: anime 15s 0s infinite;
+  -webkit-animation: anime 15s 0s infinite;
+          animation: anime 15s 0s infinite;
   color: white;
 }
 .footer section .list-data {
@@ -118,7 +119,7 @@
   margin-bottom: 0.7rem;
 }
 
-@keyframes anime {
+@-webkit-keyframes anime {
   0% {
     background: url("../../Images/travel/download.jfif");
     object-fit: cover;
@@ -176,4 +177,71 @@
   }
 }
 
-/*# sourceMappingURL=mobile.css.map */
+@keyframes anime {
+  0% {
+    background: url("../../Images/travel/download.jfif");
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+  }
+  10% {
+    background: url("../../Images/travel/getty_583734066_335273.jpg");
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+  }
+  20% {
+    background: url("../../Images/travel/images (1).jfif");
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+  }
+  30% {
+    background: url("../../Images/travel/photo-1468818438311-4bab781ab9b8.jfif");
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+  }
+  40% {
+    background: url("../../Images/travel/images.jfif");
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+  }
+  50% {
+    background: url("../../Images/travel/woman-traveler-looking-caldera-from-fira-thera-santorini-island-greece-tourism-traveling-vacation-concept_106029-1429.webp");
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+  }
+  60% {
+    background: url("../../Images/travel/adobestock-130932614.jpeg");
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+  }
+  70% {
+    background: url("../../Images/travel/choose-the-best-travel-insurance-program-that-meets-your-needs.jpeg");
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+  }
+  80% {
+    background: url("../../Images/travel/Picture2.png");
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+  }
+  90% {
+    background: url("../../Images/travel/Travel-Insurance-Family-Walking-Through-the-Airport.webp");
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+  }
+  100% {
+    background: url("../../Images/travel/downlo11ad.jfif");
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+  }
+}/*# sourceMappingURL=mobile.css.map */
