@@ -1,0 +1,65 @@
+@import "../../Styles/scss/mixin";
+@import "../../Styles/scss/variable";
+.header {
+    .nav {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+        gap: .1rem;
+        .left-navbar {
+            .logo {
+                border: none;
+            }
+            .travelers {
+                .travelers-list {
+                    width: 25vw;
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .right-navbar {
+            .icon-bell {
+                display: none;
+            }
+            img {
+                width: auto;
+                height: 4vh;
+            }
+        }
+    }
+}
+
+.main {
+    .section-left {
+        justify-content: flex-start;
+    }
+    .section-right {
+        display: flex;
+        flex-direction: column;
+        .image {
+            width: 100%;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .item-2 {
+            z-index: -1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: baseline;
+            position: relative;
+            bottom: 9rem;
+            left: 14rem;
+            .image-small {
+                position: relative;
+                right: 8rem;
+                top: 5rem;
+                z-index: 9999999;
+            }
+        }
+    }
+}

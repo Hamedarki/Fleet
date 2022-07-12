@@ -1,0 +1,110 @@
+@import "../../../../Styles/scss/mixin";
+@import "../../../../Styles/scss/variable";
+.nav {
+    font-size: 1.1rem;
+    display: flex;
+    margin: 1rem;
+}
+
+.right-navbar {
+    display: none;
+}
+
+.item-header {
+    display: flex;
+    position: relative;
+    top: 0.2rem;
+    i,
+    li {
+        @include hoverHeader;
+    }
+}
+
+.left-navbar {
+    display: flex;
+}
+
+.left-navbar .logo {
+    margin-left: auto;
+    padding: 0;
+    justify-content: space-evenly;
+    border: none;
+}
+
+.left-navbar .logo img {
+    max-width: 27%;
+}
+
+.left-navbar .travelers {
+    display: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .section-left {
+        margin-top: 2rem;
+        p {
+            width: 100%;
+            font-size: 1.5rem;
+        }
+        div {
+            font-size: 1.65rem;
+            margin-bottom: 1.5rem;
+            width: 100%;
+            input {
+                width: 65vw;
+            }
+        }
+    }
+    .section-right {
+        .images {
+            display: flex;
+            flex-direction: column;
+            .item-1,
+            .item-2 {
+                position: static;
+                margin: auto;
+                padding: 0;
+            }
+            .item-1 {
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    position: absolute;
+                    justify-content: space-between;
+                    width: 40vw;
+                    img {
+                        width: auto;
+                        height: 4.5vh;
+                    }
+                }
+            }
+            .item-2 {
+                img {
+                    max-width: 87%;
+                }
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    position: absolute;
+                    justify-content: space-between;
+                    width: 40vw;
+                    left: .9rem;
+                    img {
+                        width: auto;
+                        height: 4.5vh;
+                    }
+                }
+            }
+            .image-style {
+                width: 100%;
+                position: static;
+                margin: auto;
+                margin-top: 1.2rem;
+            }
+        }
+    }
+}
