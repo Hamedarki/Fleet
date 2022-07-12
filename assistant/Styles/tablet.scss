@@ -1,0 +1,56 @@
+@import "../../Styles/scss/mixin";
+@import "../../Styles/scss/variable";
+body {
+    height: 100%;
+}
+
+.header {
+    .nav {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+        gap: .1rem;
+        .left-navbar {
+            .logo {
+                border: none;
+            }
+            .travelers {
+                .travelers-list {
+                    width: 25vw;
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .right-navbar {
+            .icon-bell {
+                display: none;
+            }
+            img {
+                width: auto;
+                height: 4vh;
+            }
+        }
+    }
+}
+
+.footer {
+    section {
+        position: absolute;
+        left: 12.5rem;
+        right: 0;
+        top: 88rem;
+        bottom: 0;
+        width: 70vw;
+        height: 18vh;
+        .list-data {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            li {
+                padding: .5rem;
+            }
+        }
+    }
+}

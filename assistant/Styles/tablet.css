@@ -1,0 +1,46 @@
+body {
+  height: 100%;
+}
+
+.header .nav {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  gap: 0.1rem;
+}
+.header .nav .left-navbar .logo {
+  border: none;
+}
+.header .nav .left-navbar .travelers .travelers-list {
+  width: 25vw;
+}
+.header .nav .left-navbar .travelers .travelers-list img {
+  width: auto;
+}
+.header .nav .right-navbar .icon-bell {
+  display: none;
+}
+.header .nav .right-navbar img {
+  width: auto;
+  height: 4vh;
+}
+
+.footer section {
+  position: absolute;
+  left: 12.5rem;
+  right: 0;
+  top: 88rem;
+  bottom: 0;
+  width: 70vw;
+  height: 18vh;
+}
+.footer section .list-data {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.footer section .list-data li {
+  padding: 0.5rem;
+}
+
+/*# sourceMappingURL=tablet.css.map */
